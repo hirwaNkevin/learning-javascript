@@ -20,8 +20,3 @@ if(!Number.isNaN(num)){
 else {
     console.log(`That's not a number`);
 }
-VM499:14 Too low.
-VM499:14 Too low.
-VM499:14 Too low.
-VM499:18 Out of Tries
-undefined
