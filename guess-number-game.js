@@ -9,12 +9,12 @@ if(!Number.isNaN(num)){
             break;
     } else if(num > guess){
         console.log(`Too high`);
-            console.log(count);
+            
     } else if(num < guess){
         console.log(`Too low.`);
-            console.log(count);
+            
     }  
-        count === tries - 1 ? console.log("Out of Tries") : null;
+        count === tries - 1 ? console.log("Out of Tries") : console.log(`Try again. Remaining tries ${tries-(count+1)}`);
     }
 } 
 else {
