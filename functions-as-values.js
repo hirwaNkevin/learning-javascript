@@ -1,0 +1,12 @@
+let func1 = function(x){return x}
+console.log(`func1 = ${func1}`);
+let anotherVariable = 1;
+console.log(`anotherVariable = ${anotherVariable}`);
+let temp = null;
+temp = anotherVariable;
+anotherVariable = func1;
+console.log(`NOW : anotherVariable = ${anotherVariable}`);
+func1 = temp;
+console.log(`NOW : func1 = ${func1}`);
+console.log(`anotherVariable(5) = ${anotherVariable(5)}`)
+console.log(`func1 = ${func1}`)
