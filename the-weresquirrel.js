@@ -6,4 +6,4 @@ let day1 = {
 let descriptions = {
     work: "Went to work",
     "touched tree": "Touched a tree"
-}
+};
