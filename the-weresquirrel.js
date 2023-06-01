@@ -1,6 +1,6 @@
 let day1 = {
     squirrel: false,
-    eventsDone: ["work", "touched tree", "pizza", "running"]
+    events: ["work", "touched tree", "pizza", "running"]
 };
 
 let descriptions = {
