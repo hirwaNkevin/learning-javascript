@@ -1,17 +1,18 @@
-let day1 = {
-    squirrel: false,
-    events: ["work", "touched tree", "pizza", "running"]
-};
-
-let descriptions = {
-    work: "Went to work",
-    "touched tree": "Touched a tree"
-};
-
-descriptions.pizza = "Ate pizza";
-console.log(descriptions.pizza);
-
-descriptions.unwantedProperty = "unwanted";
-console.log(descriptions.unwantedProperty);
-delete descriptions.unwantedProperty;
-console.log(descriptions.unwantedProperty);
+let journal = [
+    {
+        events: ["work", "touched tree", "pizza",
+            "running", "television"],
+        squirrel: false
+    },
+    {
+        events: ["work", "ice cream", "cauliflower",
+            "lasagna", "touched tree", "brushed teeth"],
+        squirrel: false
+    },
+    {
+        events: ["weekend", "cycling", "break", "peanuts",
+            "beer"],
+        squirrel: true
+    },
+    /* and so on... */
+];
