@@ -1,4 +1,4 @@
-let printPyramid = function (size, character="^"){
+let printPyramid = function (size=7, character="^"){
     let out = "";
 for (let i=0;i<size;i++){
     let padCount = 0;
