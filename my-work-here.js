@@ -18,5 +18,13 @@ let myWorkHere = {
         let sum = 0;
         for (let number of numbers) { sum += number; }
         return sum;
+    },
+    reverseArray: function (array) {
+        let newArray = [];
+        for (let i = 0; i < array.length; i++) {
+            let arrayElementPosition = (array.length - i) - 1;
+            newArray.push(array[arrayElementPosition]);
+        }
+        return newArray;
     }
 }
