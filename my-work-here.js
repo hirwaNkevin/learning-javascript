@@ -36,5 +36,15 @@ let myWorkHere = {
             console.log(array);
         }
         return array;
+    },
+    listToArray: myWorkHere.listToArray = function (list) {
+        if (list.rest !== null) {
+            let array = [];
+            for (let val of Object.keys(list)) {
+                if (typeof list[val] !== 'object') { array.push(list[val]); }
+                else { return array.concat(myWorkHere.listToArray(list[val])); }
+            }
+        }
+        else { return list.value }
     }
 }
