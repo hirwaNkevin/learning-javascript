@@ -67,5 +67,10 @@ let myWorkHere = {
         newList.value = elt;
         newList.rest = list;
         return newList;
+    },
+    listNth: function (list, nth) {
+        if (nth === 0) { return list.value; }
+        else if (list.rest !== null) { return myWorkHere.listNth(list.rest, nth - 1); }
+        else { return undefined }
     }
 }
