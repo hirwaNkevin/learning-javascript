@@ -46,5 +46,20 @@ let myWorkHere = {
             }
         }
         else { return list.value }
+    },
+    arrayToList: function (array) {
+        let list = {};
+        console.log(array);
+        if (array[0] != null) {
+            for (let val of array) {
+
+                list.value = val;
+                list.rest = myWorkHere.arrayToList(array.slice(1));
+                return list;
+            }
+        } else {
+            list.rest = null;
+            return list
+        }
     }
 }
