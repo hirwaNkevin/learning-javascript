@@ -61,5 +61,11 @@ let myWorkHere = {
             list.rest = null;
             return list
         }
+    },
+    listPrepend: function (list, elt) {
+        let newList = {};
+        newList.value = elt;
+        newList.rest = list;
+        return newList;
     }
 }
