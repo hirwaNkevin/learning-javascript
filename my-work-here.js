@@ -1,5 +1,5 @@
 let myWorkHere = {
-    range: function (start, end, step = 1) {
+    range: function (start, end, step = 1) {// produces an array within a range (start,end)
         let rangeArray = [];
         if (step < 0) {
             for (let i = start; i >= end; i = i + step) {// i > end because i is decreasing and = because end must be included
