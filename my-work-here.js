@@ -37,7 +37,7 @@ let myWorkHere = {
         }
         return array;
     },
-    listToArray: function (list) {
+    listToArray: function (list) { // turns a list(nested type object) into an array -- {value: 1, rest: {...}}
         if (list.rest !== null) {
             let array = [];
             for (let val of Object.keys(list)) {
