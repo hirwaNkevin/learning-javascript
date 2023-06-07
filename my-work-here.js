@@ -78,7 +78,6 @@ let myWorkHere = {
         if (Object.keys(val1).length !== Object.keys(val2).length) { result = false;}
         else {
             for (let innerVal of Object.keys(val1)) {
-                console.log(val1[innerVal]);
                 if (!(innerVal in val2)) { result = false; break; }
                 else { result = true; }
             }
