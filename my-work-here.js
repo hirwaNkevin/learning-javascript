@@ -19,10 +19,10 @@ let myWorkHere = {
         for (let number of numbers) { sum += number; }
         return sum;
     },
-    reverseArray: function (array) {
+    reverseArray: function (array) {// produces an new reversed array 
         let newArray = [];
         for (let i = 0; i < array.length; i++) {
-            let arrayElementPosition = (array.length - i) - 1;
+            let arrayElementPosition = (array.length - i) - 1;// ex (7 - 0)-1 = 6 (last element for first iteration and so on)
             newArray.push(array[arrayElementPosition]);
         }
         return newArray;
