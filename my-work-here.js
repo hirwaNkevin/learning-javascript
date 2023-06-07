@@ -72,5 +72,13 @@ let myWorkHere = {
         if (nth === 0) { return list.value; }
         else if (list.rest !== null) { return myWorkHere.listNth(list.rest, nth - 1); }
         else { return undefined }
+    },
+    checkObjectProperties: (val1, val2) => {// arrow function that returns false if even one element is not found in the other object
+        let result = false;
+        for (let innerVal of Object.keys(val1)) {
+            if (!(innerVal in val2)) { result = false; break; }
+            else { result = true; }
+        }
+        return result;
     }
 }
