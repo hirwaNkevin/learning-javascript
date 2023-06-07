@@ -75,9 +75,13 @@ let myWorkHere = {
     },
     checkObjectProperties: (val1, val2) => {// arrow function that returns false if even one element is not found in the other object
         let result = false;
-        for (let innerVal of Object.keys(val1)) {
-            if (!(innerVal in val2)) { result = false; break; }
-            else { result = true; }
+        if (Object.keys(val1).length !== Object.keys(val2).length) { }
+        else {
+            for (let innerVal of Object.keys(val1)) {
+                console.log(val1[innerVal]);
+                if (!(innerVal in val2)) { result = false; break; }
+                else { result = true; }
+            }
         }
         return result;
     }
