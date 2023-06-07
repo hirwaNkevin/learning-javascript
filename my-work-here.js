@@ -29,7 +29,7 @@ let myWorkHere = {
     },
     reverseArrayInPlace: function (array) {
         let temp = 0;
-        for (let i = 0; i < (array.length / 2); i++) {
+        for (let i = 0; i < (array.length / 2); i++) {// /2 because one iteration changes two places. it reverses it back if done for the full length (amount of elements)
             temp = array[i];
             array[i] = array[array.length - i - 1];
             array[array.length - i - 1] = temp;
