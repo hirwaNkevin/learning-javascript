@@ -37,7 +37,7 @@ let myWorkHere = {
         }
         return array;
     },
-    listToArray: myWorkHere.listToArray = function (list) {
+    listToArray: function (list) {
         if (list.rest !== null) {
             let array = [];
             for (let val of Object.keys(list)) {
