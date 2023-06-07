@@ -75,13 +75,28 @@ let myWorkHere = {
     },
     checkObjectProperties: (val1, val2) => {// arrow function that returns false if even one element is not found in the other object
         let result = false;
-        if (Object.keys(val1).length !== Object.keys(val2).length) { result = false;}
+        if (Object.keys(val1).length !== Object.keys(val2).length) { result = false; }
         else {
             for (let innerVal of Object.keys(val1)) {
                 if (!(innerVal in val2)) { result = false; break; }
                 else { result = true; }
             }
         }
+        return result;
+    },
+    deepEqual: function (val1, val2) {
+        let result = false;
+        if (typeof val1 === 'object' && typeof val2 === 'object') {
+            if (myWorkHere.checkObjectProperties(val1, val2)) {
+                // console.log("got here");
+                for (let val of Object.keys(val1)) { result = myWorkHere.deepEqual(val1[val], val2[val]) }
+                // console.log("reached here");
+            }
+            else { result = false; }
+
+        }
+        else if (val1 === val2) { result = true; }
+        else { result = false }
         return result;
     }
 }
