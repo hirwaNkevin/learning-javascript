@@ -88,9 +88,7 @@ let myWorkHere = {
         let result = false;
         if (typeof val1 === 'object' && typeof val2 === 'object') {
             if (myWorkHere.checkObjectProperties(val1, val2)) {
-                // console.log("got here");
                 for (let val of Object.keys(val1)) { result = myWorkHere.deepEqual(val1[val], val2[val]) }
-                // console.log("reached here");
             }
             else { result = false; }
 
