@@ -11,7 +11,9 @@
 
 <body>
     <script>
-        console.log(SCRIPTS.map(script=>script.year));
+        console.log(SCRIPTS.reduce((a,b)=>{
+            return a.year < b.year? b:a;
+        }));
 
     </script>
 </body>
