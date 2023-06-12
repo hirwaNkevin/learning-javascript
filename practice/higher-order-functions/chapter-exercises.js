@@ -26,3 +26,12 @@ function loop(value, test, update, body) {
 function every_SomeVersion(array,predicate){
     return !array.some(predicate);
 }
+
+function every_LoopVersion(array,predicate){
+    let result = true;
+    for (let item of array) {
+        if(predicate(item)){result = result && true;}
+        else{result = result && false;}
+    }
+    return result;
+}
