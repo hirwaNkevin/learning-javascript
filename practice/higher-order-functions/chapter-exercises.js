@@ -15,13 +15,10 @@ function loop(value, test, update, body) {
     do {
         if (test(value)) {
             allowed = true;
-            console.log(allowed);
             body(value);
         }
         else { return undefined }
 
         value = update(value);
-        console.log(value);
     } while (allowed)
 }
-loop(7, (value) => value > 0, (value) => { value--; }, (value) => { console.log(value) });
