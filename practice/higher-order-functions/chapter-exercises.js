@@ -22,3 +22,7 @@ function loop(value, test, update, body) {
         value = update(value);
     } while (allowed)
 }
+
+function every_SomeVersion(array,predicate){
+    return !array.some(predicate);
+}
