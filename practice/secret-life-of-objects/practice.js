@@ -1,4 +1,4 @@
-
+// methods
 let cow = {position: [0,0],walk};
 
 function walk(distance,direction) {
