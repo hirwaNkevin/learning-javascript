@@ -21,3 +21,5 @@ let animal = {kind:'animal', position:[0,0], sound(sound){return sound}, walk};
 let dog = Object.create(animal);
 dog.kind = 'Dog';
 dog.walk(1);
+
+// Classes
