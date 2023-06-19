@@ -2,7 +2,7 @@
 let cow = { position: [0, 0], walk };
 
 function walk(distance, direction) {
-    if (direction === "y") {
+    if (direction === "y"&&distance<0) {
         this.position[1] <= 0 ? this.position : this.position[1] += distance;
         return this.position;
     }
