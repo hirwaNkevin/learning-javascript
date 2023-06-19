@@ -17,7 +17,7 @@ function walk(distance, direction) {
 }
 
 // prototypes
-let animal = { kind: 'animal', position: [0, 0], sound(sound) { return sound }, walk };
+let animal = {position:[0,0],walk,sound:(sound)=>sound};
 let dog = Object.create(animal);
 dog.kind = 'Dog';
 dog.walk(1);
