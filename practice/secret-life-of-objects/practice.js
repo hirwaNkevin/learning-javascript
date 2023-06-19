@@ -23,3 +23,13 @@ dog.kind = 'Dog';
 dog.walk(1);
 
 // Classes
+function Dog(breed) {
+    this.breed = breed;
+}
+
+Dog.prototype.sound = function (sound) {
+    return sound;
+}
+
+let dog4 = new Dog("Boa bull");
+// dog4.breed returns > 'Boa bull'
