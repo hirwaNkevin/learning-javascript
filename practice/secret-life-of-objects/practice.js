@@ -27,10 +27,6 @@ function Dog(breed) {
     this.breed = breed;
 }
 
-function Dog(breed) {
-    this.breed = breed;
-}
-
 Dog.prototype = Object.create(animal);
 
 let dog4 = new Dog("Boa bull");
