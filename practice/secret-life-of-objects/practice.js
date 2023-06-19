@@ -27,9 +27,11 @@ function Dog(breed) {
     this.breed = breed;
 }
 
-Dog.prototype.sound = function (sound) {
-    return sound;
+function Dog(breed) {
+    this.breed = breed;
 }
+
+Dog.prototype = Object.create(animal);
 
 let dog4 = new Dog("Boa bull");
 // dog4.breed returns > 'Boa bull'
