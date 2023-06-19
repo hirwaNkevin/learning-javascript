@@ -35,3 +35,6 @@ Dog.prototype = Object.create(animal);
 
 let dog4 = new Dog("Boa bull");
 // dog4.breed returns > 'Boa bull'
+let dog3 = new Dog("German shepherd");
+dog3.sound('BARK!'); // 'BARK!'
+dog3.walk(3,'y'); // '[0,3]'
