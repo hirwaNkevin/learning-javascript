@@ -34,3 +34,18 @@ let dog4 = new Dog("Boa bull");
 let dog3 = new Dog("German shepherd");
 dog3.sound('BARK!'); // 'BARK!'
 dog3.walk(3,'y'); // '[0,3]'
+
+// Maps
+
+let children=[
+    {name: 'kev',age:2},
+    {name: 'Henry',age:5},
+    {name: 'Kate',age:1},
+    {name: 'Linda',age:7}
+];
+
+let admittance = new Map();
+admittance.set(children[0],true);
+admittance.set(children[1],true);
+admittance.set(children[2],true);
+admittance.set(children[3],true);
