@@ -14,6 +14,23 @@
             "Mom's room-kitchen", "kitchen-outside", "kitchen-dinning hall", "dinning hall-living room",
             "living room-bathroom", "bathroom-Ange's room", "bathroom-Kevin's room"
         ];
+        
+        function buildGraph(paths) {
+            let graph = Object.create(null);
+            function addPath(from,to) {
+                if(graph[from]==null){
+                    graph[from]=[to];
+                }
+                else{
+                    graph[from].push(to);
+                }
+            }
+            for(let [from,to] of paths.map(p=>p.split("-"))){
+                addPath(from,to);
+                addPath(to,from);
+            }
+            return graph;
+        }
     </script>
 </body>
 
